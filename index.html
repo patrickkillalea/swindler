@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>U-Swindler</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel='shortcut icon' href='images/icon.ico' />
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.scrolly.min.js"></script>
+	<script src="js/jquery.scrollzer.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/skel-layers.min.js"></script>
+	<script src="js/init.js"></script>
+	<noscript>
+		<link rel="stylesheet" href="css/skel.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-wide.css" />
+	</noscript>
+	<script>
+		// function loadData() {
+		// 	var url = "https://docs.google.com/spreadsheet/pub?key=p_aHW5nOrj0VO2ZHTRRtqTQ&single=true&gid=0&range=A1&output=csv";
+		// 	xmlhttp = new XMLHttpRequest();
+		// 	xmlhttp.onreadystatechange = function() {
+		// 		if (xmlhttp.readyState == 4) {
+		// 			document.getElementById("display").innerHTML = xmlhttp.responseText;
+		// 			//alert(xmlhttp.responseText);
+		// 		}
+		// 	};
+		// 	xmlhttp.open("GET", url, true);
+		// 	xmlhttp.send(null);
+		// }
+	</script>
+	<style>
+		.iframe-container-lg {
+			position: relative;
+			padding-bottom: 56.25%;
+			padding-top: 35px;
+			height: 0;
+			overflow: hidden;
+			border-top: #000000 1px solid;
+			border-right: #000000 1px solid;
+			border-left: #000000 1px solid;
+			border-bottom: #000000 1px solid;
+		}
+		.iframe-container-lg iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<!-- Header -->
+	<div id="header" class="skel-layers-fixed">
+
+		<div class="top">
+
+			<!-- Logo -->
+			<div id="logo">
+				<span class="image avatar48"><img src="images/uicon.png" alt="" /></span>
+				<h1 id="title">U-Swindler</h1>
+				<p>Betting Syndicate</p>
+			</div>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a>
+					</li>
+					<li><a href="#history" id="history-link" class="skel-layers-ignoreHref"><span class="icon fa-th">History</span></a>
+					</li>
+					<li><a href="#captains" id="captains-link" class="skel-layers-ignoreHref"><span class="icon fa-group">Captains</span></a>
+					</li>
+					<li><a href="#pandl" id="pandl-link" class="skel-layers-ignoreHref"><span class="icon fa-bar-chart">P&L Chart</span></a>
+					</li>
+					<li><a href="#meetingminutes" id="meetingminutes-link" class="skel-layers-ignoreHref"><span class="icon fa-calendar">Meetings</span></a>
+					</li>
+					<li><a href="#docs" id="docs-link" class="skel-layers-ignoreHref"><span class="icon fa-google">Google Docs</span></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+
+	<!-- Main -->
+	<div id="main">
+
+		<!-- Intro -->
+		<section id="top" class="one dark cover">
+			<div class="container">
+
+				<header>
+					<h2 class="alt">Welcome to U-Swindler's betting syndicate</h2>
+					<p>Here you can see things like what bets we've made, contact captains and see our P&L chart</p>
+					<p>This site pulls data directly from our Google docs sheets</p>
+				</header>
+
+			</div>
+		</section>
+
+
+		<!-- History -->
+		<section id="history" class="two">
+			<div class="container">
+
+				<header>
+					<h2>History</h2>
+				</header>
+
+				<p>What bets did we make?</p>
+
+				<div class="iframe-container-lg">
+					<iframe src="https://docs.google.com/spreadsheets/d/14VmLyPZm22dyF525XYiIcnZBff9CMyQzUw5El7FeHQA/pubhtml?gid=1940772369&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+				</div>
+
+			</div>
+		</section>
+
+
+		<!-- Captains -->
+		<section id="captains" class="three">
+			<div class="container">
+
+				<header>
+					<h2>Captains</h2>
+				</header>
+
+				<p>Here is our list of Captains and the dates they are gatekeeper</p>
+
+				<iframe src="https://docs.google.com/spreadsheets/d/14VmLyPZm22dyF525XYiIcnZBff9CMyQzUw5El7FeHQA/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="700" height="300"></iframe>
+
+			</div>
+		</section>
+
+
+		<!-- Profit & Loss Chart -->
+		<section id="pandl" class="four">
+			<div class="container">
+
+				<header>
+					<h2>P&L Chart</h2>
+				</header>
+
+				<p>See how we're getting on</p>
+
+				<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/14VmLyPZm22dyF525XYiIcnZBff9CMyQzUw5El7FeHQA/pubchart?oid=1985994129&amp;format=interactive"></iframe>
+
+			</div>
+		</section>
+
+
+		<!-- Meeting Minutes -->
+		<section id="meetingminutes" class="four">
+			<div class="container">
+
+				<header>
+					<h2>Meeting Minutes</h2>
+				</header>
+
+				<p>What did we discuss in our Friday meeting</p>
+
+				<div class="iframe-container-lg">
+					<iframe src="https://docs.google.com/document/d/1dbFrY4dO2MLBVfqTJomrD49G2IxttPGrxQBcKUJSyKE/pub?embedded=true"></iframe>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- Google Docs Link -->
+		<section id="docs" class="six">
+			<div class="container">
+
+				<header>
+					<h2>Google Docs</h2>
+				</header>
+
+				<p>Open our docs to view and update</p>
+
+				<a target="_blank" href="https://docs.google.com/spreadsheets/d/14VmLyPZm22dyF525XYiIcnZBff9CMyQzUw5El7FeHQA/edit?usp=sharing" class="button">Spreadsheet</a>
+				<a target="_blank" href="https://docs.google.com/document/d/1dbFrY4dO2MLBVfqTJomrD49G2IxttPGrxQBcKUJSyKE/edit?usp=sharing" class="button">Meeting Minutes</a>
+				<!--<a class="button" onclick="loadData()">Load Spreadsheet Data</a>-->
+				<!--<div id="display"></div>-->
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Footer -->
+	<div id="footer">
+
+		<!-- Copyright -->
+		<ul class="copyright">
+			<li>&copy; U-Swindler. All rights reserved.</li>
+			</li>
+		</ul>
+
+	</div>
+
+</body>
+
+</html>
